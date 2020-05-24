@@ -7,7 +7,7 @@ class Dog
   attr_accessor :name
   attr_reader :save
 
-  def initialize(name, save)
+  def initialize(name)
     @name = name
     @save << @@all
   end
