@@ -12,6 +12,10 @@ class Dog
     @@all
   end
 
+  def save
+    @@all << self
+  end
+
   def self.clear_all
     @@all.clear
   end
@@ -20,9 +24,7 @@ class Dog
     puts @@all.map{ |dog| dog.name}
   end
 
-  def save
-    @@all << self
-  end
+
 
 end
 # Add your code here
