@@ -4,12 +4,11 @@ class Dog
   @@clear_all
   @@print_all
 
-  attr_accessor :name
-  attr_reader :save
+  attr_accessor :name, :save
 
-  def initialize(name)
+  def initialize(name, save)
     @name = name
-    @@all << self
+    @save << @@all
   end
 
   def self.all
