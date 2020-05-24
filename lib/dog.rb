@@ -4,7 +4,8 @@ class Dog
   @@clear_all
   @@print_all
 
-  attr_accessor :name, :save
+  attr_accessor :name
+  attr_reader :save
 
   def initialize(name, save)
     @name = name
